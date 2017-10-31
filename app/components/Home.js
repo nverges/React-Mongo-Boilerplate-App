@@ -52,8 +52,8 @@ class Main extends React.Component {
 
               {/* Jumbotron */}
               <div className="jumbotron">
-                  <h1>New York Times Scrubber</h1>
-                  <p>Search for Articles on the New York Times website and save them for later!</p>
+                  <h1>Boilerplate App Built with Node, Express, React and MongoDB</h1>
+                  <p>This app searches for articles on the New York Times and allows user to save results in a Database.</p>
               </div>
 
               {/* Render Components */}

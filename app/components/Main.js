@@ -10,9 +10,16 @@ import Search from "./children/Search";
 import Results from './children/Results';
 import Saved from './children/Saved';
 
-import helpers from './utils/helpers';
-
 export default class Main extends { Component } {
+  constructor() {
+    super()
+    this.state = {};
+  }
+
+  componentDidMount() {
+
+  }
+
   render() {
     return (
       <div className="container-fluid nopadding">
@@ -20,7 +27,7 @@ export default class Main extends { Component } {
         {/* React Router Switch Statement */}
         <Switch>
           <Route exact path='/' component= { Home } />
-          <Route path='/login' component= { Login } />
+          <Route path='/results' component= { Results } />
           <Route component = { Home } />
         </Switch>
 
@@ -28,6 +35,6 @@ export default class Main extends { Component } {
         <Search />
 
       </div>
-    )
+    );
   }
-}
+};
