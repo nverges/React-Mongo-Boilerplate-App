@@ -33,24 +33,24 @@ app.use(router);
 // -------------------------------------------------
 
 // MongoDB Configuration configuration (Change this URL to your own DB)
-// if (PORT === 3000) {
-//   mongoose.connect("mongodb://localhost/nytreact", {
-//     useMongoClient: true
-//   });
-// } else {
-//   mongoose.connect("mongodb://heroku_ndqrkzz6:jcqblmcqcf1ckg0vmbqisonmnj@ds127044.mlab.com:27044/heroku_ndqrkzz6", {
-//     useMongoClient:true
-//   });
-// };
-// var db = mongoose.connection;
+if (PORT === 3000) {
+  mongoose.connect("mongodb://localhost/nytreact", {
+    useMongoClient: true
+  });
+} else {
+  mongoose.connect("mongodb://heroku_ndqrkzz6:jcqblmcqcf1ckg0vmbqisonmnj@ds127044.mlab.com:27044/heroku_ndqrkzz6", {
+    useMongoClient:true
+  });
+};
+var db = mongoose.connection;
 
-// db.on("error", function(err) {
-//   console.log("Mongoose Error: ", err);
-// });
+db.on("error", function(err) {
+  console.log("Mongoose Error: ", err);
+});
 
-// db.once("open", function() {
-//   console.log("Mongoose connection successful.");
-// });
+db.once("open", function() {
+  console.log("Mongoose connection successful.");
+});
 
 // -------------------------------------------------
 
