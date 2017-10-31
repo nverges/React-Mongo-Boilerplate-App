@@ -5,13 +5,13 @@ import ReactDOM from "react-dom";
 // We need to include all of the components we"re utilizing
 // import Navbar from "./components/Navbar";
 // import Jumbotron from "./children/Jumbotron";
-import Search from "./children/Search";
-import Results from './children/Results';
-import Saved from './children/Saved';
+import Search from "./children/Search.jsx";
+import Results from './children/Results.jsx';
+import Saved from './children/Saved.jsx';
 
 import helpers from './utils/helpers';
 
-class Main extends React.Component {
+class Home extends React.Component {
 
   // Here we set a generic state associated with the number of clicks
   // Note how we added in this history state variable
@@ -52,8 +52,8 @@ class Main extends React.Component {
 
               {/* Jumbotron */}
               <div className="jumbotron">
-                  <h1>Boilerplate App Built with Node, Express, React and MongoDB</h1>
-                  <p>This app searches for articles on the New York Times and allows user to save results in a Database.</p>
+                  <h1>React Boilerplate App NYT Search</h1>
+                  <p>Boilerplate App Built with Node, Express, React and MongoDB</p>
               </div>
 
               {/* Render Components */}
@@ -67,6 +67,6 @@ class Main extends React.Component {
 
 };
 
-Main.displayName = "Main";
+Home.displayName = "Home";
 
-export default Main;
+export default Home;

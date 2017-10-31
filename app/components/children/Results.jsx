@@ -1,7 +1,7 @@
 var React = require("react");
 
 import _ from "lodash";
-import ResultsRow from './resultsRow';
+import ResultsRow from './resultsRow.jsx';
 
 class Results extends React.Component {
 

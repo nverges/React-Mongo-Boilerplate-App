@@ -1,6 +1,6 @@
 var React = require("react");
 
-import ResultsRow from "./resultsRow";
+import ResultsRow from "./resultsRow.jsx";
 
 class Saved extends React.Component {
 
