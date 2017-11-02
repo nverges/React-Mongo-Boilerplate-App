@@ -9,24 +9,30 @@ class Results extends React.Component {
     super(props)
     this.state = {
       title: "Search Results",
-      // articleTitle: "Article Title Here",
-      // articleDetails: "Article Details Here",
-      // buttonStatus: "Save"
+      buttonStatus: "Save"
     }
   }
 
+  componentShouldUpdate() {
+    if (!props.saved) {
+
+    }
+  }
+
+
   renderResults() {
-    return _.map(this.props.results, (entry, index) => {
+    return _.map(this.props.results, (data, index) => {
       return (
 
         <ResultsRow 
 
           saved={true} 
-          title={entry.headline.main} 
-          article_id={entry._id}
-          url={entry.web_url}
-          date={entry.pub_date}
-          key={entry._id} 
+          title={data.headline.main} 
+          article_id={data._id}
+          url={data.web_url}
+          date={data.pub_date}
+          snippet={data.snippet}
+          key={data._id} 
 
         />
     
@@ -36,12 +42,14 @@ class Results extends React.Component {
 
   render() {
     return (
-      <div className="panel panel-primary">
-      <div className="panel-heading">{this.state.title}</div>
-        <div className="panel-body">
+      <div className="card">
+      <div className="card-header card-success">{this.state.title}</div>
+      
+        <div className="card-block">
           {this.renderResults()}
         </div>
       </div>
+
     );
   }
 };

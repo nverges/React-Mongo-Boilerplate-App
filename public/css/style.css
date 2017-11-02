@@ -2,6 +2,14 @@
     margin-top: 24px;
 }
 
-.panel-heading {
-    font-size: 18px;
+.card {
+    margin-bottom: 24px;
 }
+.button-div {
+    display: inline;
+}
+
+.action-button {
+    display: inline;
+}
+

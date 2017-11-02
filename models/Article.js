@@ -23,6 +23,10 @@ var ArticleSchema = new Schema({
   url: {
     type: String,
     // required: true
+  },
+
+  snippet: {
+    type: String
   }
 });
 

@@ -1,7 +1,7 @@
 import React from "react";
 import axios from 'axios'; 
 
-import helpers from '../utils/helpers'; 
+const helpers=require('../utils/helpers.js'); 
 
 class Search extends React.Component {
 
@@ -34,10 +34,10 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div className="panel panel-primary">
-        <div className="panel-heading">Article Search</div>
+      <div className="card">
+        <div className="card-header card-success">Article Search</div>
 
-        <div className="panel-body">
+        <div className="card-block">
 
           <form onSubmit={this.handleSubmit.bind(this)}>
 
