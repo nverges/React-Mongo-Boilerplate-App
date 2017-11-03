@@ -1,0 +1,20 @@
+body {
+  color: #ff3; }
+
+.card-success {
+  background-color: #ff3; }
+
+.navbar {
+  font-size: 16px; }
+  .navbar .navbar-nav {
+    display: flex; }
+
+.jumbotron .lead {
+  color: blue; }
+
+#footer .nav {
+  background-color: #ff3; }
+#footer .nav-item {
+  padding: 20px 20px; }
+
+/*# sourceMappingURL=sass.css.map */

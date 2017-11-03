@@ -35,7 +35,7 @@ class Search extends React.Component {
   render() {
     return (
       <div className="card">
-        <div className="card-header card-success">Article Search</div>
+        <div className="card-header card-default">Article Search</div>
 
         <div className="card-block">
 

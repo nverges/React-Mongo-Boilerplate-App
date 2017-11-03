@@ -13,9 +13,9 @@ class Results extends React.Component {
     }
   }
 
-  componentShouldUpdate() {
+  shouldComponentUpdate(props) {
     if (!props.saved) {
-
+      return true
     }
   }
 
@@ -43,7 +43,7 @@ class Results extends React.Component {
   render() {
     return (
       <div className="card">
-      <div className="card-header card-success">{this.state.title}</div>
+      <div className="card-header card-default">{this.state.title}</div>
       
         <div className="card-block">
           {this.renderResults()}

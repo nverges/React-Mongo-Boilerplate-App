@@ -37,7 +37,7 @@ class Saved extends React.Component {
     return (
       <div className="card">
 
-        <div className="card-header card-success">{this.state.title}</div>
+        <div className="card-header card-default">{this.state.title}</div>
 
           <div className="card-block">
             {this.renderHistory()}

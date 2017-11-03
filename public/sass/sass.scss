@@ -1,0 +1,37 @@
+$blue: #ff3;
+$header: blue;
+$medium-font: 16px;
+$huge-font: 50px;
+
+body {
+    color: $blue;
+}
+
+.card-success {
+    background-color: $blue;
+}
+
+.navbar {
+    font-size: $medium-font;
+
+    .navbar-nav {
+       display: flex;
+    }
+}
+
+.jumbotron {
+    .lead {
+        color: $header;
+    }
+}
+
+
+#footer {
+    .nav {
+        background-color: $blue;
+    }
+
+    .nav-item {
+        padding: 20px 20px;
+    }
+}
