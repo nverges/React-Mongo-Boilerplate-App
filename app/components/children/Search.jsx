@@ -1,7 +1,7 @@
 import React from "react";
 import axios from 'axios'; 
 
-const helpers=require('../utils/helpers.js'); 
+const helpers=require('../../../utils/helpers.js'); 
 
 class Search extends React.Component {
 

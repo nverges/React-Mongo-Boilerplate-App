@@ -1,6 +1,6 @@
 import React from "react";
 
-import helpers from '../utils/helpers';
+import helpers from '../../../utils/helpers';
 
 class ResultsRow extends React.Component {
 

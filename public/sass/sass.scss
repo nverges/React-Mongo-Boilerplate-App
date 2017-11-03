@@ -1,15 +1,7 @@
-$blue: #ff3;
-$header: blue;
+$yellow: #ff3;
+$gray: rgb(102, 102, 102);
 $medium-font: 16px;
 $huge-font: 50px;
-
-body {
-    color: $blue;
-}
-
-.card-success {
-    background-color: $blue;
-}
 
 .navbar {
     font-size: $medium-font;
@@ -21,14 +13,14 @@ body {
 
 .jumbotron {
     .lead {
-        color: $header;
+        color: $gray;
     }
 }
 
 
 #footer {
     .nav {
-        background-color: $blue;
+        // background-color: $gray;
     }
 
     .nav-item {
