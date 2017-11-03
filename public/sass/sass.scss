@@ -1,5 +1,5 @@
 $yellow: #ff3;
-$gray: rgb(102, 102, 102);
+$gray: #eceeef;
 $medium-font: 16px;
 $huge-font: 50px;
 
@@ -13,14 +13,14 @@ $huge-font: 50px;
 
 .jumbotron {
     .lead {
-        color: $gray;
+        
     }
 }
 
 
 #footer {
     .nav {
-        // background-color: $gray;
+        background-color: $gray;
     }
 
     .nav-item {

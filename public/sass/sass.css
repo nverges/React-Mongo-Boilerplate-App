@@ -4,8 +4,10 @@
     display: flex; }
 
 .jumbotron .lead {
-  color: #666666; }
+  border: 5px; }
 
+#footer .nav {
+  background-color: #eceeef; }
 #footer .nav-item {
   padding: 20px 20px; }
 

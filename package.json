@@ -5,7 +5,8 @@
   "main": "public/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -w"
+    "build": "webpack -w",
+    "dev" : "concurrently --kill-others  \"-webpack\" \"sass --watch public\" \"nodemon server\""
   },
   "author": "Nick Verges",
   "license": "ISC",
