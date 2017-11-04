@@ -34,7 +34,7 @@ app.use(router);
 
 // MongoDB Configuration configuration
 // if (PORT === 3000) {
-//   mongoose.connect("mongodb://localhost/nytreact", {
+//   mongoose.connect("mongodb://localhost/nytreact", { 
 //     useMongoClient: true
 //   });
 // } else {

@@ -4,9 +4,10 @@ const Jumbotron = () => {
     return (
         <div className="jumbotron">
             <h1 className="display-3">React Boilerplate App NYT Search</h1>
-            <p className="lead">Boilerplate App Built with Bootstrap 4, Sass, Node, Express, React and MongoDB</p>
+            <p className="lead">Boilerplate App Built with Bootstrap 4, Sass, Node, Express, React and MongoDB.</p>
+            <p className="lead subheader">Run "npm run dev" to build environment</p>
             <p className="lead">
-            <a className="btn btn-primary btn-lg" href="#" role="button">Button</a>
+            <a className="btn btn-primary btn-lg" href="#" role="button">Button.</a>
             </p>
         </div>
     )
