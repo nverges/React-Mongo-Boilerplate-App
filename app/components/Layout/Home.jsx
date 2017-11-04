@@ -9,8 +9,10 @@ import Search from "../children/Search.jsx";
 import Results from '../children/Results.jsx';
 import Saved from '../children/Saved.jsx';
 import Navbar from './Navbar.jsx';
-import Footer from './Footer.jsx';
 import Jumbotron from './Jumbotron.jsx';
+import BottomNav from './BottomNav.jsx';
+import Footer from './Footer.jsx';
+
 
 const helpers= require('../../../utils/helpers');
 
@@ -63,8 +65,9 @@ class Home extends React.Component {
                   <Saved history={this.state.history} />
 
               </div>
-
-              <Footer />
+          
+              {/* <BottomNav /> */}
+              {<Footer />}
 
           </div>
       );
