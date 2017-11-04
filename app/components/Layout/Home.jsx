@@ -5,13 +5,17 @@ import ReactDOM from "react-dom";
 // We need to include all of the components we"re utilizing
 // import Navbar from "./components/Navbar";
 // import Jumbotron from "./children/Jumbotron";
-import Search from "../children/Search.jsx";
-import Results from '../children/Results.jsx';
-import Saved from '../children/Saved.jsx';
-import Navbar from './Navbar.jsx';
+import Search from "../Children/Search.jsx";
+import Results from '../Children/Results.jsx';
+import Saved from '../Children/Saved.jsx';
+import Navbar from '../Navigation/Navbar.jsx';
 import Jumbotron from './Jumbotron.jsx';
-import BottomNav from './BottomNav.jsx';
+// import BottomNav from '../Navigation//BottomNav.jsx'; 
 import Footer from './Footer.jsx';
+// import DialogSimple from '../Dialogs/Dialog.jsx';
+
+// Cards
+import Cards from '../Cards/Cards.jsx';
 
 
 const helpers= require('../../../utils/helpers');
@@ -56,13 +60,14 @@ class Home extends React.Component {
 
               <div className="container">
 
-
-
                   {/* Render Components */}
                   <Jumbotron />
-                  <Search  runQuery={helpers.runQuery.bind(this, this.handleResults.bind(this))}/>
-                  <Results results={this.state.results} />
-                  <Saved history={this.state.history} />
+
+                  {/* <Cards /> */}
+                  {/* <DialogSimple /> */}
+                  {<Search  runQuery={helpers.runQuery.bind(this, this.handleResults.bind(this))}/>}
+                  {<Results results={this.state.results} />}
+                  {<Saved history={this.state.history} />}
 
               </div>
           

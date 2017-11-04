@@ -27,12 +27,12 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Declares Express static folder
 app.use(express.static("public"));
 
-// Use Router
-app.use(router);
+  // Use Router
+  app.use(router);
 
 // -------------------------------------------------
 
-// MongoDB Configuration configuration
+// MongoDB Configuration
 // if (PORT === 3000) {
 //   mongoose.connect("mongodb://localhost/nytreact", { 
 //     useMongoClient: true

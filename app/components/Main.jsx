@@ -6,9 +6,9 @@ import { Switch, Route } from "react-router-dom";
 // import Navbar from "./components/Navbar";
 // import Jumbotron from "./children/Jumbotron";
 import Home from './Layout/Home.jsx';
-import Search from "./children/Search.jsx";
-import Results from './children/Results.jsx';
-import Saved from './children/Saved.jsx';
+import Search from "./Children/Search.jsx";
+import Results from './Children/Results.jsx';
+import Saved from './Children/Saved.jsx';
 
 export default class Main extends Component {
   constructor() {
