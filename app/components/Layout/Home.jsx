@@ -5,11 +5,20 @@ import ReactDOM from "react-dom";
 // We need to include all of the components we"re utilizing
 // import Navbar from "./components/Navbar";
 // import Jumbotron from "./children/Jumbotron";
-import Search from "./children/Search.jsx";
-import Results from './children/Results.jsx';
-import Saved from './children/Saved.jsx';
+import Search from "../Children/Search.jsx";
+import Results from '../Children/Results.jsx';
+import Saved from '../Children/Saved.jsx';
+import Navbar from '../Navigation/Navbar.jsx';
+import Jumbotron from './Jumbotron.jsx';
+// import BottomNav from '../Navigation//BottomNav.jsx'; 
+import Footer from './Footer.jsx';
+// import DialogSimple from '../Dialogs/Dialog.jsx';
 
-import helpers from './utils/helpers';
+// Cards
+import Cards from '../Cards/Cards.jsx';
+
+
+const helpers= require('../../../utils/helpers');
 
 class Home extends React.Component {
 
@@ -33,37 +42,41 @@ class Home extends React.Component {
         this.setState({ history: response.data });
       }
     }.bind(this));
-  }
+  };
 
   handleResults(results) {
-    console.log("handle results")
     this.setState({
       results: results
     }, () => {
-      console.log("HERE")
       console.log(this.state.results)
-    })
-  }
+    });
+  };
 
   render () {
       return (
-          
-          <div className="container">
+          <div>
 
-              {/* Jumbotron */}
-              <div className="jumbotron">
-                  <h1>React Boilerplate App NYT Search</h1>
-                  <p>Boilerplate App Built with Node, Express, React and MongoDB</p>
+          <Navbar />
+
+              <div className="container">
+
+                  {/* Render Components */}
+                  <Jumbotron />
+
+                  {/* <Cards /> */}
+                  {/* <DialogSimple /> */}
+                  {<Search  runQuery={helpers.runQuery.bind(this, this.handleResults.bind(this))}/>}
+                  {<Results results={this.state.results} />}
+                  {<Saved history={this.state.history} />}
+
               </div>
-
-              {/* Render Components */}
-              <Search  runQuery={helpers.runQuery.bind(this, this.handleResults.bind(this))}/>
-              <Results results={this.state.results} />
-              <Saved history={this.state.history} />
+          
+              {/* <BottomNav /> */}
+              {<Footer />}
 
           </div>
-      )
-  }
+      );
+  };
 
 };
 

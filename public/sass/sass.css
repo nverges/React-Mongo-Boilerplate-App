@@ -1,0 +1,14 @@
+.navbar {
+  font-size: 16px; }
+  .navbar .navbar-nav {
+    display: flex; }
+
+.jumbotron .subheader {
+  color: blue; }
+
+#footer .nav {
+  background-color: #eceeef; }
+#footer .nav-item {
+  padding: 50px 50px; }
+
+/*# sourceMappingURL=sass.css.map */

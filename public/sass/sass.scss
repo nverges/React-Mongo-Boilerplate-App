@@ -1,0 +1,33 @@
+$yellow: #ff3;
+$gray: #eceeef;
+$medium-font: 16px;
+$huge-font: 50px;
+
+.navbar {
+    font-size: $medium-font;
+
+    .navbar-nav {
+       display: flex;
+    }
+}
+
+.jumbotron {
+    .lead {
+        
+    }
+
+    .subheader {
+        color: blue;
+    }
+}
+
+
+#footer {
+    .nav {
+        background-color: $gray;
+    }
+
+    .nav-item {
+        padding: 50px 50px;
+    }
+}

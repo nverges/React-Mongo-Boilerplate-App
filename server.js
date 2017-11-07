@@ -27,21 +27,26 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Declares Express static folder
 app.use(express.static("public"));
 
-// Use Router
-app.use(router);
+  // Use Router
+  app.use(router);
 
 // -------------------------------------------------
 
-// MongoDB Configuration configuration (Change this URL to your own DB)
-if (PORT === 3000) {
-  mongoose.connect("mongodb://localhost/nytreact", {
-    useMongoClient: true
-  });
-} else {
-  mongoose.connect("mongodb://heroku_ndqrkzz6:jcqblmcqcf1ckg0vmbqisonmnj@ds127044.mlab.com:27044/heroku_ndqrkzz6", {
-    useMongoClient:true
-  });
-};
+// MongoDB Configuration
+// if (PORT === 3000) {
+//   mongoose.connect("mongodb://localhost/nytreact", { 
+//     useMongoClient: true
+//   });
+// } else {
+//   mongoose.connect("mongodb://heroku_ndqrkzz6:jcqblmcqcf1ckg0vmbqisonmnj@ds127044.mlab.com:27044/heroku_ndqrkzz6", {
+//     useMongoClient:true
+//   });
+// };
+
+mongoose.connect("mongodb://heroku_ndqrkzz6:jcqblmcqcf1ckg0vmbqisonmnj@ds127044.mlab.com:27044/heroku_ndqrkzz6", {
+  useMongoClient:true
+});
+
 var db = mongoose.connection;
 
 db.on("error", function(err) {

@@ -8,25 +8,25 @@ class Saved extends React.Component {
       super(props) 
         this.state = {
         title: "Saved Articles",
-        savedArticleTitle: "Saved Article Title Here",
-        savedArticleDetails: "Saved Article Details Here",
         buttonStatus: "Delete"
       }
   }
 
   renderHistory() {
-    return _.map(this.props.history, (entry, index) => {
+    return _.map(this.props.history, (data, index) => {
 
       return (
 
         <ResultsRow 
+
           saved={false} 
-          article_id={entry.article_id}
-          title={entry.title}
-          date={entry.date}
-          url={entry.url}
-          key={entry._id} 
-          _id={entry._id}
+          article_id={data.article_id}
+          title={data.title}
+          date={data.date}
+          url={data.url}
+          snippet={data.snippet}
+          key={data._id} 
+          _id={data._id}
         />
 
       )
@@ -35,11 +35,11 @@ class Saved extends React.Component {
   
   render() {
     return (
-      <div className="panel panel-primary">
+      <div className="card">
 
-        <div className="panel-heading">{this.state.title}</div>
+        <div className="card-header card-default">{this.state.title}</div>
 
-          <div className="panel-body">
+          <div className="card-block">
             {this.renderHistory()}
           </div>
 

@@ -1,5 +1,5 @@
 // Include the axios package for performing HTTP requests (promise based alternative to request)
-import axios from 'axios';
+const axios = require('axios');
 
 // API key
 var apikey = "e9db19e4654b4f4f9bd08840dd18671d";
@@ -41,13 +41,14 @@ var helper = {
     return axios.get("/api/saved");
   },
 
-  // This function posts new searches to our database.
-  postHistory: function(article_id, title, date, url) {
+  // This function posts new articles to our database.
+  postHistory: function(article_id, title, date, url, snippet) {
     return axios.post("/api/saved", { 
       article_id: article_id,
       title: title,
       date: date,
-      url: url
+      url: url,
+      snippet: snippet
     });
   },
 
